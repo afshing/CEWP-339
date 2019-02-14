@@ -53,7 +53,7 @@ function showArray() {
       '[' + myArray.join(',') + ']';
 }
 
-function showFancyArray() {
+function showFancyArray1() {
     // let text = '<li>Hello</li>\n<li>Bye</li>\n'
     let text = '';
     for (let i = 0; i < myArray.length; i++) {
@@ -63,6 +63,17 @@ function showFancyArray() {
 
     document.querySelector('#myFancyList')
       .innerHTML = text;
+}
+
+function showFancyArray() {
+  let text = '';
+
+  myArray.forEach(function(item) {
+      text += '<li>' + item + '</li>\n'
+  });
+  document.querySelector('#myFancyList')
+    .innerHTML = text;
+
 }
 
 
