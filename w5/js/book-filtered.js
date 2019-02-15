@@ -149,3 +149,35 @@ let books =
             "title": "Harry Potter Power"
         }
     }];
+
+
+    function printTitles() {
+      // your code goes here
+      console.log('SOMETHING');
+    }
+
+    function printAuthors() {
+        // your code goes here
+        console.log('SOMETHING ELSE');
+    }
+
+    function findShortest() {
+        // your code goes here
+        return 'TITLE OF THE BOOK';
+    }
+
+    function aboveThree() {
+      let result = [];
+        // push the title of the books where rating >= 3
+
+      return result;
+    }
+
+    function findAuthors () {
+      let result = {};
+      /* {
+        "Females and Harry Potter" : ["Ruthann Mayes-Elma"],
+        "Harry Potter and International Relations":  ["Daniel H. Nexon", "Iver B. Neumann"],
+      }*/
+      return result;
+    }
