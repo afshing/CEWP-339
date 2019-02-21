@@ -1,4 +1,8 @@
 'use strict'
+// this JS file is for the logic and should be
+// added after the books.js in the index.html
+
+console.log(books);
 function printTitles() {
   // your code goes here
   console.log('SOMETHING');
@@ -20,8 +24,6 @@ function aboveThree() {
 
   return result;
 }
-
-aboveThree();
 
 function findAuthors () {
   let result = {};
