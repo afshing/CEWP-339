@@ -12,14 +12,17 @@ function submit() {
 function sendGetRequest(text) {
     let URL = `https://www.googleapis.com/books/v1/volumes?q=${text}`
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            processResponse(JSON.parse(this.responseText));
-        }
-    };
+    
+    xhttp.addEventListener("load", reqListener);
+
     xhttp.open("GET", URL, true);
     xhttp.send();
 
+}
+
+
+function reqListener () {
+  processResponse(JSON.parse(this.responseText));
 }
 
 function processResponse(data) {
