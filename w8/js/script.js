@@ -1,4 +1,6 @@
+
 function findBeer() {
+
   let city = getCityName();
   let name = getName();
 
@@ -29,7 +31,9 @@ function reqListener () {
 function showResult(list) {
   let result = '';
   list.forEach((item) => {
-    result += `<li>${item.name}</li>`
+    result += `<li>
+      <a href="${item.website_url}">${item.name}</a>
+    </li>`
     // result += '<li>' + item.name + '</li>';
   });
   console.log(result);
